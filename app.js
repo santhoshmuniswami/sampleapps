@@ -35,12 +35,7 @@ var employeeProvider= new EmployeeProvider('localhost', 27017);
 
 //index
 app.get('/', function(req, res){
-  employeeProvider.findAll(function(error, emps){
-      res.render('index', {
-            title: 'Employees',
-            employees:emps
-        });
-  });
+  res.send("Hello huys");
 });
 
 //new employee
