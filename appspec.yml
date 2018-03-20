@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+hooks:
+  ApplicationStart:
+    - location: app.js
+      timeout: 300
+      runas: root
